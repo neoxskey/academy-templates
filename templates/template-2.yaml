@@ -1,4 +1,6 @@
 # Placeholder for template-2.yaml
+# The "Cloud Exposure" Lab (ID: study-s3-public)
+​Learning Objective: Identify misconfigured AWS S3 buckets and understand how "authenticated" access can still be public.
 # Add your .study YAML here
 id: study-s3-public
 info:

@@ -1,7 +1,8 @@
-# Placeholder for template-3.yaml
+#Placeholder for template-3.yaml
 # The "Insecure Direct Object Reference" (ID: study-idor-order)
 ​Learning Objective: Learn how incrementing a numeric ID in a URL (e.g., /order/101) can expose other users' private data.
 # Add your .study YAML here
+
 id: study-idor-order
 info:
   name: "IDOR: Stealing Order Data"

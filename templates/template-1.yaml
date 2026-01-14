@@ -3,7 +3,7 @@ info:
   name: "Bypassing JWT Authentication"
   author: "HackerAcademy_Seed"
   severity: high
-  description: "Learn to manipulate JWT headers to gain admin access."
+  description: "1. The \"Broken Auth\" Lab (ID: study-jwt-none)\nLearning Objective: Understand how improper JWT library configuration allows an attacker to bypass authentication by changing the header algorithm to none."
 
 environment:
   docker: "hackeracademy/labs-node-jwt:latest"

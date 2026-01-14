@@ -1,5 +1,9 @@
 # Placeholder for template-5.yaml
+#id: study-sqli-shell
+#The "SQLi to RCE" Lab (ID: study-sqli-shell)
+​Learning Objective: An advanced lab showing how a simple SQL injection can be used to write a "Web Shell" to the server and execute OS commands.
 # Add your .study YAML here
+
 id: study-sqli-shell
 info:
   name: "SQL Injection to Web Shell"

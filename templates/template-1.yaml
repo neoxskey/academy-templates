@@ -1,2 +1,21 @@
-# Placeholder for template-1.yaml
-# Add your .study YAML here
+id: study-jwt-none
+info:
+  name: "Bypassing JWT Authentication"
+  author: "HackerAcademy_Seed"
+  severity: high
+  description: "Learn to manipulate JWT headers to gain admin access."
+
+environment:
+  docker: "hackeracademy/labs-node-jwt:latest"
+  setup: "docker run -p 8080:8080 hackeracademy/labs-node-jwt"
+
+scenario:
+  mission: "Access the protected /admin/flag endpoint without a valid password."
+  steps:
+    - "Login as a guest user to receive a JWT."
+    - "Decode the JWT and change the 'alg' field to 'none'."
+    - "Remove the signature and send the modified token back to the server."
+
+validation:
+  type: flag
+  flag_id: "ACADEMY{n0ne_is_n0t_a_saf3_alg}"

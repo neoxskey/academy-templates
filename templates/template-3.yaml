@@ -1,2 +1,20 @@
 # Placeholder for template-3.yaml
 # Add your .study YAML here
+id: study-idor-order
+info:
+  name: "IDOR: Stealing Order Data"
+  severity: medium
+
+environment:
+  docker: "hackeracademy/labs-php-orders:v2"
+
+scenario:
+  mission: "Find the shipping address of user 'admin' by browsing your own order history."
+  steps:
+    - "Place an order for a sandwich."
+    - "Observe the URL: /orders/view?id=502."
+    - "Iterate through IDs to find a different user's receipt."
+
+validation:
+  type: flag
+  flag_id: "ACADEMY{id_is_not_auth}"

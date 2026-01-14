@@ -1,5 +1,5 @@
 # Placeholder for template-5.yaml
-#
+# Add your .study YAML here
 id: study-jwt-none
 info:
   name: "Bypassing JWT Authentication"
